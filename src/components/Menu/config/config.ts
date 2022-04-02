@@ -104,7 +104,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   },
   {
     label: t('NFT Launchpad'),
-    href: '#', //`${nftsBaseUrl}`,
+    href: '/soon', //`${nftsBaseUrl}`,
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [

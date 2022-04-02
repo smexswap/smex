@@ -2,7 +2,7 @@ import { Language } from "../LangSelector/types";
 import { FooterLinkType } from "./types";
 import { TwitterIcon, TelegramIcon, RedditIcon, InstagramIcon, FacebookIcon, DiscordIcon, MediumIcon } from "../Svg";
 
-export const footerLinks: FooterLinkType[] = [
+export const footerLinks = [
   {
     label: "Analytics",
     href: "#",
@@ -17,15 +17,15 @@ export const footerLinks: FooterLinkType[] = [
   },
   {
     label: "Referral Program",
-    href: "#",
+    href: "referral",
   },
   {
     label: "Apply For Pool",
-    href: "#",
+    href: "https://forms.gle/dPnvXiH469nnGywg7",
   },
   {
     label: "Apply For Farm",
-    href: "#",
+    href: "https://forms.gle/LYGDD8Dr1WpN3bht9",
   },
   // {
   //   label: "Help",
