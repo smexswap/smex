@@ -167,7 +167,7 @@ const Pools: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [sortOption, setSortOption] = useState('hot')
   const chosenPoolsLength = useRef(0)
-
+  console.log("pools ==> ",pools);
   const [finishedPools, openPools] = useMemo(() => partition(pools, (pool) => pool.isFinished), [pools])
   const stakedOnlyFinishedPools = useMemo(
     () =>
@@ -219,9 +219,9 @@ const Pools: React.FC = () => {
   } else {
     chosenPools = stakedOnly ? stakedOnlyOpenPools() : openPools
   }
-
+  // Comment for Dev::- initially 0 was passed to the slice, but we don't need first 3 pools that's why passing 3 here
   chosenPools = useMemo(() => {
-    const sortedPools = sortPools(account, sortOption, pools, chosenPools).slice(0, numberOfPoolsVisible)
+    const sortedPools = sortPools(account, sortOption, pools, chosenPools).slice(3, numberOfPoolsVisible)
 
     if (searchQuery) {
       const lowercaseQuery = latinise(searchQuery.toLowerCase())
@@ -329,14 +329,14 @@ const Pools: React.FC = () => {
         )}
         {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
         <div ref={observerRef} />
-        <Image
+       {/* <Image
           mx="auto"
           mt="12px"
           src="/images/decorations/3d-syrup-bunnies.png"
           alt="Pancake illustration"
           width={192}
           height={184.5}
-        />
+        />*/}
       </Page>
     </>
   )
