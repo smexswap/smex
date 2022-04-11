@@ -343,14 +343,6 @@ const Farms: React.FC = ({ children }) => {
           <Heading scale="lg" color="text">
             {t('Stake LP tokens to earn.')}
           </Heading>
-          <NextLinkFromReactRouter to="/farms/auction" id="lottery-pot-banner">
-            <Button p="0" variant="text">
-              <Text color="primary" bold fontSize="16px" mr="4px">
-                {t('Community Auctions')}
-              </Text>
-              <ArrowForwardIcon color="primary" />
-            </Button>
-          </NextLinkFromReactRouter>
           </Flex>
           <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
             <Heading as="h2" pt={"15px"} lineHeight="1.5 !important">SMEx SWAP's Farms offer multiple farming opportunities to you. Double Your Staked amount in rewards by staking your LP tokens in return for additional SMEx tokens and earning high income from swap transactions.</Heading>

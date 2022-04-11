@@ -13,7 +13,7 @@ export const footerLinks = [
   },
   {
     label: "Docs",
-    href: "#",
+    href: "https://doc.smexswap.com",
   },
   {
     label: "Referral Program",

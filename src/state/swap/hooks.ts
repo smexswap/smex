@@ -89,9 +89,9 @@ export function useSwapActionHandlers(): {
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // v2 factory
-  '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D', // v2 router 02
+  '0x47b3cB3c0f3A7Cfd484A884C77257B409F2a5Ab2', // v2 factory
+  '', // v2 router 01
+  '0x1a6C61E04FAAAb956176A22056f7183C6B77849E', // v2 router 02
 ]
 
 /**
